@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-weight: bold;
+}
+main header .nav-left p {
+  margin-top: 10px;
+}
+main header .nav-right button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+main header #login {
+  background-color: black;
+  color: white;
+}
+main section {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section .top p {
+  margin-top: 10px;
+}
+main section .top {
+  padding: 10px;
+}
+main section .top .btn-div {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+main section .top .btn-div i {
+  margin-right: 5px;
+}
+main section .top .btn-div button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+}
+main section .top .btn-div button:hover {
+  background-color: black;
+  color: white;
+}
+main section .top .input {
+  position: relative;
+  width: 100%;
+}
+main section .top .input input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+main section .top .input i {
+  position: absolute;
+  left: 93%;
+  top: 5px;
+  background-color: #EC5E95;
+  padding: 10px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
