@@ -16,7 +16,7 @@ main header {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 10vw 20vw;
+  padding: 10vw 15vw;
   gap: 16vw;
   font-weight: bold;
 }
@@ -47,16 +47,17 @@ main section.view1 {
 }
 main section.view1 .top {
   width: 100%;
-  padding: 0 20px;
 }
 main section.view1 .top p {
-  margin-top: 10px;
+  margin-top: 3vh;
 }
 main section.view1 .top .btn-div {
   width: 100%;
-  margin: 20px 0;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 2vh;
 }
 main section.view1 .top .btn-div i {
   margin-right: 5px;
@@ -90,9 +91,11 @@ main section.view1 .top .input input:hover {
 }
 main section.view1 .top .input input::-moz-placeholder {
   padding-left: 20px;
+  font-size: 11px;
 }
 main section.view1 .top .input input::placeholder {
   padding-left: 20px;
+  font-size: 11px;
 }
 main section.view1 .top .input i {
   position: absolute;
@@ -192,4 +195,54 @@ main section.view3 .second button {
   border: 1px solid rgb(209, 209, 209);
   background-color: transparent;
   margin-top: 10px;
+}
+main section.view4 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+main section.view4 .first {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+main section.view4 .first video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+main section.view4 .first img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+main section.view4 .first .bottom {
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(transparent, rgb(71, 71, 71));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10px;
+  position: absolute;
+  bottom: -20%;
+  transition: all 0.1s ease;
+}
+main section.view4 .first .bottom p {
+  font-size: 14px;
+}
+main section.view4 .first .bottom .bottom-btn button {
+  padding: 7px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
+main section.view4 .first:hover .bottom {
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
