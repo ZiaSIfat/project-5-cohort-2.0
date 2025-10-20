@@ -12,8 +12,7 @@ html,body{
 }
 
 main{
-
-    width: 100%;
+      width: 100%;
 
     header{
     width: 100%;
@@ -157,13 +156,14 @@ section.view1{
 
 section.view2{
     width: 100%;
-    padding: 7vw;
+    padding: 8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, rgb(251, 240, 255),white);
     gap: 8px;
+    border-radius: 10px;
 
 
     .first{
@@ -197,8 +197,38 @@ section.view2{
     }
 }
 
+section.view3{
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
 
 
+    .first{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
 
+        button{
+            padding: 10px 25px;
+            border-radius: 15px;
+            border: 1px solid rgb(209, 209, 209);
+            background-color: transparent;
+            font-size: 15px;
 
+        }
+    }
+
+    .second button{
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(209, 209, 209);
+        background-color: transparent;
+        margin-top: 10px;
+    }
+  
+}
 }

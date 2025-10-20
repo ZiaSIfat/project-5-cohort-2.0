@@ -128,13 +128,14 @@ main section.view1 .bottom video {
 }
 main section.view2 {
   width: 100%;
-  padding: 7vw;
+  padding: 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, rgb(251, 240, 255), white);
   gap: 8px;
+  border-radius: 10px;
 }
 main section.view2 .first {
   position: relative;
@@ -163,4 +164,32 @@ main section.view2 .second {
   font-size: 20px;
   padding-top: 10px;
   font-weight: 100;
+}
+main section.view3 {
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+main section.view3 .first {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+main section.view3 .first button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 1px solid rgb(209, 209, 209);
+  background-color: transparent;
+  font-size: 15px;
+}
+main section.view3 .second button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(209, 209, 209);
+  background-color: transparent;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
