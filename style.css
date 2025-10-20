@@ -9,15 +9,23 @@ html, body {
   width: 100%;
 }
 
+main {
+  width: 100%;
+}
 main header {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 50px;
+  padding: 10vw 20vw;
+  gap: 16vw;
   font-weight: bold;
 }
 main header .nav-left p {
   margin-top: 10px;
+}
+main header .nav-right {
+  display: flex;
+  flex-direction: column;
 }
 main header .nav-right button {
   padding: 10px 15px;
@@ -30,43 +38,44 @@ main header #login {
   background-color: black;
   color: white;
 }
-main section {
+main section.view1 {
   width: 100%;
-  padding: 30px;
+  padding: 7vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-main section .top p {
+main section.view1 .top {
+  width: 100%;
+  padding: 0 20px;
+}
+main section.view1 .top p {
   margin-top: 10px;
 }
-main section .top {
-  padding: 10px;
-}
-main section .top .btn-div {
+main section.view1 .top .btn-div {
+  width: 100%;
   margin: 20px 0;
   display: flex;
   gap: 30px;
 }
-main section .top .btn-div i {
+main section.view1 .top .btn-div i {
   margin-right: 5px;
 }
-main section .top .btn-div button {
+main section.view1 .top .btn-div button {
   padding: 10px;
   border-radius: 10px;
   border: none;
   background-color: transparent;
 }
-main section .top .btn-div button:hover {
+main section.view1 .top .btn-div button:hover {
   background-color: black;
   color: white;
 }
-main section .top .input {
+main section.view1 .top .input {
   position: relative;
   width: 100%;
 }
-main section .top .input input {
+main section.view1 .top .input input {
   width: 100%;
   height: 50px;
   border-radius: 30px;
@@ -74,18 +83,18 @@ main section .top .input input {
   background-color: rgb(245, 245, 245);
   transition: all 0.2s ease;
 }
-main section .top .input input:hover {
+main section.view1 .top .input input:hover {
   background-color: transparent;
   border: 2px solid #fcacca;
   opacity: 0.5;
 }
-main section .top .input input::-moz-placeholder {
+main section.view1 .top .input input::-moz-placeholder {
   padding-left: 20px;
 }
-main section .top .input input::placeholder {
+main section.view1 .top .input input::placeholder {
   padding-left: 20px;
 }
-main section .top .input i {
+main section.view1 .top .input i {
   position: absolute;
   right: 0;
   top: 5px;
@@ -94,19 +103,64 @@ main section .top .input i {
   border-radius: 50%;
   margin-right: 7px;
 }
-main section .top .popular {
+main section.view1 .top .popular {
   margin: 20px 0;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-main section .top .popular p {
+main section.view1 .top .popular p {
   font-weight: bold;
 }
-main section .top .popular button {
+main section.view1 .top .popular button {
   padding: 10px 5px;
   border-radius: 8px;
   border: 1px solid rgb(180, 180, 180);
   background-color: transparent;
   font-size: 10px;
+}
+main section.view1 .bottom {
+  width: 100%;
+}
+main section.view1 .bottom video {
+  width: 100%;
+  border-radius: 20px;
+}
+main section.view2 {
+  width: 100%;
+  padding: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(251, 240, 255), white);
+  gap: 8px;
+}
+main section.view2 .first {
+  position: relative;
+  padding-top: 20px;
+}
+main section.view2 .first button {
+  padding: 20px;
+  border-radius: 40px;
+  border: none;
+  font-size: 20px;
+  background-color: white;
+  font-weight: bold;
+}
+main section.view2 .first p {
+  background-color: #EC5E95;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: white;
+  position: absolute;
+  left: 75%;
+  top: 13%;
+  font: bold;
+}
+main section.view2 .second {
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 100;
 }/*# sourceMappingURL=style.css.map */
