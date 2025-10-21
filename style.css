@@ -16,8 +16,8 @@ main header {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 10vw 15vw;
-  gap: 16vw;
+  justify-content: space-between;
+  padding: 20px 40px;
   font-weight: bold;
 }
 main header .nav-left p {
@@ -47,17 +47,17 @@ main section.view1 {
 }
 main section.view1 .top {
   width: 100%;
+  text-align: left;
 }
-main section.view1 .top p {
+main section.view1 .top .text {
   margin-top: 3vh;
 }
 main section.view1 .top .btn-div {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2vw;
-  margin-top: 2vh;
+  margin: 2vh 0;
 }
 main section.view1 .top .btn-div i {
   margin-right: 5px;
@@ -116,7 +116,7 @@ main section.view1 .top .popular p {
   font-weight: bold;
 }
 main section.view1 .top .popular button {
-  padding: 10px 5px;
+  padding: 5px 15px;
   border-radius: 8px;
   border: 1px solid rgb(180, 180, 180);
   background-color: transparent;
@@ -245,4 +245,47 @@ main section.view4 .first .bottom .bottom-btn button {
 }
 main section.view4 .first:hover .bottom {
   bottom: 0;
+}
+
+@media (min-width: 700px) {
+  main header .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  main section.view1 .top h1 {
+    font-size: 4rem;
+    width: 80%;
+  }
+  main section.view1 .top .text {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  main section.view1 .top .btn-div {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  main section.view1 .top .input input::-moz-placeholder {
+    font-size: 15px;
+  }
+  main section.view1 .top .input input::placeholder {
+    font-size: 15px;
+  }
+  main section.view1 .top .popular {
+    justify-content: space-around;
+  }
+  main section.view2 {
+    flex-direction: row;
+    gap: 30px;
+  }
+  main section.view2 .first {
+    width: 50%;
+  }
+  main section.view2 .first button {
+    font-size: 1rem;
+  }
+  main section.view2 .second {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

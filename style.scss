@@ -18,8 +18,8 @@ main{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10vw 15vw;
-    gap: 16vw;
+    justify-content: space-between;
+    padding: 20px 40px;
     font-weight: bold;
 
     .nav-left p{
@@ -57,19 +57,19 @@ section.view1{
    
      .top{
         width: 100%;
+        text-align: left;
         // padding: 0 20px;
         
-        p{
+        .text{
             margin-top: 3vh;
         }
 
         .btn-div{    
-            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 2vw;
-            margin-top: 2vh;
+            margin: 2vh 0;
 
         }
 
@@ -135,7 +135,7 @@ section.view1{
             }
 
             button{
-                padding: 10px 5px;
+                padding: 5px 15px;
                 border-radius: 8px;
                 border: 1px solid rgb(180, 180, 180);
                 background-color: transparent;
@@ -295,6 +295,63 @@ section.view4{
     .first:hover .bottom{
         bottom: 0;
         
+    }
+}
+}
+
+@media (min-width:700px){
+    main{
+           header{
+        .nav-left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    section.view1{
+        
+              .top{
+                h1{
+                    font-size: 4rem;
+                    width: 80%;
+                }
+                .text{
+                    font-size: 1.5rem;
+                    width: 80%;
+                }
+                .btn-div{
+                    width: 100%;
+                    justify-content: flex-start;
+                    
+                }
+
+                .input input::placeholder{
+                    font-size: 15px;
+                }
+
+                .popular{
+                    justify-content: space-around;
+                }
+            }
+        
+    }
+
+    section.view2{
+       flex-direction: row;
+       gap: 30px;
+
+       .first{
+        width: 50%;
+
+        button{
+            font-size: 1rem;
+        }
+       } 
+       .second{
+        font-size: 1rem;
+       }
+
     }
 }
 }
