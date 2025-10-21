@@ -41,10 +41,11 @@ main header #login {
 }
 main section.view1 {
   width: 100%;
-  padding: 7vw;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 main section.view1 .top {
   width: 100%;
@@ -92,11 +93,11 @@ main section.view1 .top .input input:hover {
 }
 main section.view1 .top .input input::-moz-placeholder {
   padding-left: 20px;
-  font-size: 11px;
+  font-size: 0.6rem;
 }
 main section.view1 .top .input input::placeholder {
   padding-left: 20px;
-  font-size: 11px;
+  font-size: 0.6rem;
 }
 main section.view1 .top .input i {
   position: absolute;
@@ -107,22 +108,6 @@ main section.view1 .top .input i {
   border-radius: 50%;
   margin-right: 7px;
 }
-main section.view1 .top .popular {
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-main section.view1 .top .popular p {
-  font-weight: bold;
-}
-main section.view1 .top .popular button {
-  padding: 5px 15px;
-  border-radius: 8px;
-  border: 1px solid rgb(180, 180, 180);
-  background-color: transparent;
-  font-size: 10px;
-}
 main section.view1 .bottom {
   width: 100%;
 }
@@ -130,9 +115,27 @@ main section.view1 .bottom video {
   width: 100%;
   border-radius: 20px;
 }
+main section.popular-div .popular {
+  padding: 1rem 2rem;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main section.popular-div .popular p {
+  font-weight: bold;
+}
+main section.popular-div .popular button {
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 1px solid rgb(180, 180, 180);
+  background-color: transparent;
+  font-size: 10px;
+}
 main section.view2 {
   width: 100%;
-  padding: 8vw;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,6 +147,7 @@ main section.view2 {
 main section.view2 .first {
   position: relative;
   padding-top: 20px;
+  display: inline-block;
 }
 main section.view2 .first button {
   padding: 20px;
@@ -160,8 +164,8 @@ main section.view2 .first p {
   padding: 5px 15px;
   color: white;
   position: absolute;
-  left: 75%;
-  top: 13%;
+  left: 10rem;
+  top: 0.5rem;
   font: bold;
 }
 main section.view2 .second {
@@ -261,8 +265,41 @@ main .last-div .last-btn {
   background-color: black;
   color: white;
 }
+main footer {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main footer img {
+  width: 4rem;
+  height: 4rem;
+}
+main footer .link {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: bold;
+}
+main footer .logos {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+main footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  opacity: 0.5;
+}
 
-@media (min-width: 700px) {
+@media (min-width: 600px) and (max-width: 800px) {
   main header .nav-left {
     display: flex;
     align-items: center;
@@ -287,15 +324,15 @@ main .last-div .last-btn {
   main section.view1 .top .input input::placeholder {
     font-size: 15px;
   }
-  main section.view1 .top .popular {
-    justify-content: space-around;
-  }
   main section.view2 {
     flex-direction: row;
     gap: 30px;
   }
   main section.view2 .first {
     width: 50%;
+  }
+  main section.view2 .first p {
+    left: 9rem;
   }
   main section.view2 .first button {
     font-size: 1rem;
@@ -308,5 +345,68 @@ main .last-div .last-btn {
   }
   main section.view4 .first .bottom {
     padding: 40px 30px;
+  }
+  main footer img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media (min-width: 900px) {
+  main header {
+    padding: 1.5rem 4rem;
+    font-size: 1.3rem;
+  }
+  main header .nav-left img {
+    height: 6rem;
+    width: 6rem;
+  }
+  main header .nav-right {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main header .nav-right button {
+    font-size: 1rem;
+  }
+  main section.view1 {
+    padding: 1rem 4rem;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  main section.view1 .top, main section.view1 .bottom {
+    width: 50%;
+  }
+  main section.view1 .top h1 {
+    font-size: 4rem;
+  }
+  main section.view1 .top .btn-div {
+    justify-content: flex-start;
+  }
+  main section.view1 .top .input input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  main section.view1 .top .input input::placeholder {
+    font-size: 1rem;
+  }
+  main section.popular-div {
+    padding: 1rem 3rem;
+  }
+  main section.popular-div .popular {
+    gap: 3rem;
+  }
+  main section.popular-div .popular p {
+    font-size: 1.5rem;
+  }
+  main section.popular-div .popular button {
+    font-size: 1rem;
+  }
+  main section.view2 {
+    flex-direction: row;
+    gap: 0rem;
+  }
+  main section.view2 .first {
+    width: 50%;
+  }
+  main section.view4 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */

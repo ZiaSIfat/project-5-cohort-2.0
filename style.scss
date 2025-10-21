@@ -52,10 +52,11 @@ main{
 
 section.view1{
     width: 100%;
-    padding: 7vw;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
    
      .top{
         width: 100%;
@@ -113,7 +114,7 @@ section.view1{
 
         .input input::placeholder{
             padding-left: 20px;
-            font-size: 11px;
+            font-size: 0.6rem;
         }
 
         .input i{
@@ -126,24 +127,7 @@ section.view1{
             margin-right: 7px;
         }
 
-        .popular{
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            p{
-                font-weight: bold;
-            }
-
-            button{
-                padding: 5px 15px;
-                border-radius: 8px;
-                border: 1px solid rgb(180, 180, 180);
-                background-color: transparent;
-                font-size: 10px;
-            }
-        }
+       
     }
 
     .bottom {
@@ -160,9 +144,32 @@ section.view1{
 
 }
 
+section.popular-div{
+     .popular{
+            padding: 1rem 2rem;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            p{
+                font-weight: bold;
+            }
+
+            button{
+                padding: 5px 15px;
+                border-radius: 8px;
+                border: 1px solid rgb(180, 180, 180);
+                background-color: transparent;
+                font-size: 10px;
+            }
+        }
+}
+
 section.view2{
     width: 100%;
-    padding: 8vw;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,11 +177,12 @@ section.view2{
     background-image: linear-gradient(to right, rgb(251, 240, 255),white);
     gap: 8px;
     border-radius: 10px;
-
-
+    
     .first{
         position: relative;
         padding-top: 20px;
+        display: inline-block;
+
     button{
         padding: 20px;
         border-radius: 40px;
@@ -190,8 +198,8 @@ section.view2{
         padding: 5px 15px;
         color: white;
         position: absolute;
-        left: 75%;
-        top: 13%;
+        left: 10rem;
+        top: 0.5rem;
         font: bold;
     }
 }
@@ -318,10 +326,46 @@ section.view4{
 }
 }
 
+footer{
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .link{
+        padding: 0 1rem ;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-weight: bold;
+    }
+
+    .logos{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 3rem 2rem;
+        gap: 1rem;
+        opacity: 0.5;
+    }
+}
+
 
 }
 
-@media (min-width:700px){
+@media (min-width:600px) and (max-width:800px){
     main{
            header{
         .nav-left{
@@ -345,6 +389,8 @@ section.view4{
                 .btn-div{
                     width: 100%;
                     justify-content: flex-start;
+
+
                     
                 }
 
@@ -352,9 +398,7 @@ section.view4{
                     font-size: 15px;
                 }
 
-                .popular{
-                    justify-content: space-around;
-                }
+                
             }
         
     }
@@ -365,6 +409,10 @@ section.view4{
 
        .first{
         width: 50%;
+
+        p{
+            left: 9rem;
+        }
 
         button{
             font-size: 1rem;
@@ -387,5 +435,92 @@ section.view4{
             }
         }
     }
+    footer{
+        img{
+            height: 5rem;
+            width: 5rem;
+        }
+    }
 }
+}
+@media (min-width:900px){
+    main{
+        header{
+            padding: 1.5rem 4rem;
+            font-size: 1.3rem;
+
+            .nav-left{
+                img{
+                    height: 6rem;
+                    width: 6rem;
+                }
+            }
+            
+            .nav-right{
+                flex-direction: row;
+                gap: 1rem;
+                button{
+                    font-size: 1rem;
+                }
+            }
+         
+        }
+
+        section.view1{
+            padding: 1rem 4rem;
+            flex-direction: row;
+            gap: 1.5rem;
+
+            .top,.bottom{
+                width: 50%;
+            }
+
+            .top{
+                h1{
+                    font-size: 4rem;
+                }
+                .btn-div{
+                    justify-content: flex-start;
+                }
+                .input input::placeholder{
+                    font-size: 1rem;
+                }
+            }
+
+
+        }
+
+        section.popular-div{
+            padding: 1rem 3rem;
+            
+            .popular{
+                gap: 3rem;
+                p{
+                    font-size: 1.5rem;
+                }
+
+                button{
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+        section.view2{
+            flex-direction: row;
+            gap: 0rem;
+            .first{
+                width: 50%;
+                p{
+                    
+                }
+            }
+            
+        }
+
+        section.view4{
+            grid-template-columns: repeat(3,1fr)
+        }
+
+        
+    }
 }
