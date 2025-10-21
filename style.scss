@@ -22,8 +22,10 @@ main{
     padding: 20px 40px;
     font-weight: bold;
 
-    .nav-left p{
-        margin-top: 10px;
+    .nav-left img{
+        width: 4rem;
+        height: 4rem;
+        
     } 
 
     .nav-right{
@@ -216,6 +218,10 @@ section.view3{
         gap: 30px;
         flex-wrap: wrap;
 
+        p{
+            font-weight: bold;
+        }
+
         button{
             padding: 10px 25px;
             border-radius: 15px;
@@ -279,7 +285,7 @@ section.view4{
             
 
             p{
-                font-size: 14px;
+                font-size: 1rem;
             }
 
 
@@ -297,6 +303,22 @@ section.view4{
         
     }
 }
+
+
+.last-div{
+    text-align: center;
+
+    .last-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem 0;
+    background-color: black;
+    color: white;
+}
+}
+
+
 }
 
 @media (min-width:700px){
@@ -352,6 +374,18 @@ section.view4{
         font-size: 1rem;
        }
 
+    }
+
+    section.view4{
+        grid-template-columns: repeat(2,1fr);
+
+        .first{
+            .bottom{
+                padding: 40px 30px;
+                
+              
+            }
+        }
     }
 }
 }
