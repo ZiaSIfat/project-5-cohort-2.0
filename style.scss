@@ -60,7 +60,7 @@ section.view1{
    
      .top{
         width: 100%;
-        text-align: left;
+        
         // padding: 0 20px;
         
         .text{
@@ -175,13 +175,14 @@ section.view2{
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, rgb(251, 240, 255),white);
-    gap: 8px;
+    gap: 1rem;
     border-radius: 10px;
     
     .first{
         position: relative;
         padding-top: 20px;
         display: inline-block;
+        text-align: center;
 
     button{
         padding: 20px;
@@ -429,13 +430,13 @@ footer{
 
     section.view2{
        flex-direction: row;
-       gap: 30px;
+       gap: 0;
 
        .first{
         width: 50%;
 
         p{
-            left: 9rem;
+            left: 11rem;
         }
 
         button{
@@ -482,6 +483,7 @@ footer{
                 img{
                     height: 6rem;
                     width: 6rem;
+                    margin-right: 1rem;
                 }
             }
             
@@ -498,22 +500,32 @@ footer{
         section.view1{
             padding: 1rem 4rem;
             flex-direction: row;
-            gap: 1.5rem;
-
-            .top,.bottom{
-                width: 50%;
-            }
+            gap: 3rem;
+            text-align: start;
+            
 
             .top{
+                width: 40%;
                 h1{
-                    font-size: 4rem;
+                    font-size: 3.5rem;
+                }
+                .text{
+                    font-size: 1.5rem;
                 }
                 .btn-div{
                     justify-content: flex-start;
+                    
+                    button{
+                        font-size: 1.2rem;
+                    }
                 }
                 .input input::placeholder{
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
+            }
+
+            .bottom{
+                width: 60%;
             }
 
 
@@ -539,11 +551,29 @@ footer{
             gap: 0rem;
             .first{
                 width: 50%;
+
                 p{
-                    
+                    left: 15rem;
                 }
+               
             }
             
+        }
+
+        section.view3{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.5rem;
+
+            .first button{
+                font-size: 1.5rem;
+            }
+
+            .second button{
+                font-size: 1.5rem;
+            }
+
         }
 
         section.view4{
@@ -551,13 +581,18 @@ footer{
         }
 
         footer{
+            
             img{
                 height: 6rem;
                 width: 6rem;
             }
             .footer-first{
                 flex-direction: row;
-                justify-content: space-evenly;
+
+                .link{
+                    font-size: 0.8rem;
+                }
+                
             }
 
             .footer-second{

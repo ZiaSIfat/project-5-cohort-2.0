@@ -49,7 +49,6 @@ main section.view1 {
 }
 main section.view1 .top {
   width: 100%;
-  text-align: left;
 }
 main section.view1 .top .text {
   margin-top: 3vh;
@@ -141,13 +140,14 @@ main section.view2 {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, rgb(251, 240, 255), white);
-  gap: 8px;
+  gap: 1rem;
   border-radius: 10px;
 }
 main section.view2 .first {
   position: relative;
   padding-top: 20px;
   display: inline-block;
+  text-align: center;
 }
 main section.view2 .first button {
   padding: 20px;
@@ -343,13 +343,13 @@ main footer .footer-second .right {
   }
   main section.view2 {
     flex-direction: row;
-    gap: 30px;
+    gap: 0;
   }
   main section.view2 .first {
     width: 50%;
   }
   main section.view2 .first p {
-    left: 9rem;
+    left: 11rem;
   }
   main section.view2 .first button {
     font-size: 1rem;
@@ -382,6 +382,7 @@ main footer .footer-second .right {
   main header .nav-left img {
     height: 6rem;
     width: 6rem;
+    margin-right: 1rem;
   }
   main header .nav-right {
     flex-direction: row;
@@ -393,22 +394,32 @@ main footer .footer-second .right {
   main section.view1 {
     padding: 1rem 4rem;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 3rem;
+    text-align: start;
   }
-  main section.view1 .top, main section.view1 .bottom {
-    width: 50%;
+  main section.view1 .top {
+    width: 40%;
   }
   main section.view1 .top h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  main section.view1 .top .text {
+    font-size: 1.5rem;
   }
   main section.view1 .top .btn-div {
     justify-content: flex-start;
   }
+  main section.view1 .top .btn-div button {
+    font-size: 1.2rem;
+  }
   main section.view1 .top .input input::-moz-placeholder {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   main section.view1 .top .input input::placeholder {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  main section.view1 .bottom {
+    width: 60%;
   }
   main section.popular-div {
     padding: 1rem 3rem;
@@ -429,6 +440,21 @@ main footer .footer-second .right {
   main section.view2 .first {
     width: 50%;
   }
+  main section.view2 .first p {
+    left: 15rem;
+  }
+  main section.view3 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+  }
+  main section.view3 .first button {
+    font-size: 1.5rem;
+  }
+  main section.view3 .second button {
+    font-size: 1.5rem;
+  }
   main section.view4 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -438,7 +464,9 @@ main footer .footer-second .right {
   }
   main footer .footer-first {
     flex-direction: row;
-    justify-content: space-evenly;
+  }
+  main footer .footer-first .link {
+    font-size: 0.8rem;
   }
   main footer .footer-second {
     justify-content: space-between;
