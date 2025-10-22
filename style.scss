@@ -22,17 +22,21 @@ main{
     padding: 20px 40px;
     font-weight: bold;
 
-    .nav-left img{
+    .nav-left {
+    
+    .nav-links{
+        display: none;
+    }
+
+    img{
         width: 4rem;
         height: 4rem;
         
     } 
-
+    }
     .nav-right{
-        display: flex;
-        flex-direction: column;
-    
-
+    display: flex;
+        
      button{
         
     padding: 10px 15px;
@@ -224,7 +228,7 @@ section.view3{
     .first{
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 2rem;
         flex-wrap: wrap;
 
         p{
@@ -246,7 +250,6 @@ section.view3{
         border-radius: 20px;
         border: 1px solid rgb(209, 209, 209);
         background-color: transparent;
-        margin-top: 10px;
     }
   
 }
@@ -289,12 +292,12 @@ section.view4{
             justify-content: space-between;
             padding: 40px 10px;
             position: absolute;
-            bottom: -20%;
+            bottom: -40%;
             transition: all 0.1s ease;
-            
+            border-radius: 20px;
 
             p{
-                font-size: 1rem;
+                font-size: 0.8rem;
             }
 
 
@@ -397,7 +400,7 @@ footer{
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 1rem;
         }
     }
     section.view1{
@@ -468,7 +471,7 @@ footer{
     }
 }
 }
-@media (min-width:900px){
+@media (min-width:900px) {
     main{
         header{
             padding: 1.5rem 4rem;
@@ -476,9 +479,13 @@ footer{
 
             .nav-left{
                 display: flex;
-                flex-direction: row;
                 align-items: center;
                 gap: 1rem;
+
+                .nav-links{
+                    display: flex;
+                    gap: 1rem
+                }
 
                 img{
                     height: 6rem;
@@ -500,8 +507,9 @@ footer{
         section.view1{
             padding: 1rem 4rem;
             flex-direction: row;
+            align-items: center;
             gap: 3rem;
-            text-align: start;
+            
             
 
             .top{
@@ -516,11 +524,11 @@ footer{
                     justify-content: flex-start;
                     
                     button{
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
                 }
                 .input input::placeholder{
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                 }
             }
 
@@ -564,14 +572,19 @@ footer{
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            font-size: 1.5rem;
+            font-size: 0.8rem;
+            padding: 1rem ;
 
-            .first button{
-                font-size: 1.5rem;
+            .first{ 
+                text-align: center;
+                
             }
 
             .second button{
-                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
             }
 
         }
@@ -601,5 +614,35 @@ footer{
         }
 
         
+    }
+}
+
+@media(min-width: 1100px){
+
+    main{
+        section.view2{
+            p{
+                left: 20rem!important;
+            }
+        }
+
+        section.view3{
+            padding: 0 2rem;
+            .first{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        footer{
+            .footer-first{
+                justify-content: space-evenly;
+                .link{
+                    gap: 1.5rem;
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
 }
