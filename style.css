@@ -267,16 +267,20 @@ main .last-div .last-btn {
 }
 main footer {
   padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 main footer img {
   width: 4rem;
   height: 4rem;
 }
-main footer .link {
+main footer .footer-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main footer .footer-first .link {
   padding: 0 1rem;
   display: flex;
   align-items: center;
@@ -285,18 +289,31 @@ main footer .link {
   gap: 1rem;
   font-weight: bold;
 }
-main footer .logos {
-  margin-top: 2rem;
+main footer .footer-first .logos {
   font-size: 1.5rem;
 }
-main footer .footer {
+main footer .footer-second {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 3rem 2rem;
   gap: 1rem;
   opacity: 0.5;
+}
+main footer .footer-second .left {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main footer .footer-second .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
@@ -356,6 +373,12 @@ main footer .footer {
     padding: 1.5rem 4rem;
     font-size: 1.3rem;
   }
+  main header .nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
   main header .nav-left img {
     height: 6rem;
     width: 6rem;
@@ -408,5 +431,16 @@ main footer .footer {
   }
   main section.view4 {
     grid-template-columns: repeat(3, 1fr);
+  }
+  main footer img {
+    height: 6rem;
+    width: 6rem;
+  }
+  main footer .footer-first {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main footer .footer-second {
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
