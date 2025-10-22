@@ -318,7 +318,7 @@ main footer .footer-second .right {
   gap: 1.5rem;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) {
   main header .nav-left {
     display: flex;
     align-items: center;
